@@ -15,4 +15,4 @@ Se implementa el patrón arquitectónico:
 
 * N Capas
 
-<center>by Fredy Cortés :metal:</center>
+> by Fredy Cortés :metal:
