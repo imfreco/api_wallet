@@ -4,7 +4,7 @@ export default createPool({
   host: process.env.DB_HOST,
   user: process.env.DB_USER,
   password: process.env.DB_PASS,
-  port: +(process.env.DB_PORT || 3302),
+  port: +(process.env.DB_PORT || 3307),
   database: process.env.DB_NAME,
   decimalNumbers: true,
 });

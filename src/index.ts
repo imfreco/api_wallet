@@ -15,6 +15,8 @@ import loadContainer from './container';
 
 const app: express.Application = express();
 
+app.use(express.json());
+
 loadContainer(app);
 
 app.use(loadControllers('./controllers/*.ts', { cwd: __dirname }));

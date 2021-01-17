@@ -16,7 +16,7 @@ export class SubscriptionService {
   }
 
   public async create(entry: ISubscriptionCreateDto): Promise<void> {
-    const originalEntry = this.subscriptionRepository.findByUserAndCode(
+    const originalEntry = await this.subscriptionRepository.findByUserAndCode(
       entry.user_id,
       entry.code
     );
@@ -36,6 +36,7 @@ export class SubscriptionService {
       originalEntry.code = entry.code;
       originalEntry.amount = entry.amount;
       originalEntry.cron = entry.cron;
+      await this.subscriptionRepository.update(originalEntry);
     } else throw new ApplicationException('Subscription not found!');
   }
 
