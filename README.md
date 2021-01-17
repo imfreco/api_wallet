@@ -10,3 +10,9 @@ Se implementan los siguientes patrones de diseño:
 
 * Inyección de dependencias
 * Repositorios
+
+Se implementa el patrón arquitectónico:
+
+* N Capas
+
+by Fredy Cortés :sunglasses:
