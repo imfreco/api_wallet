@@ -7,6 +7,7 @@ Se abarcan las siguientes **tecnologías**:
 * Node.js
 * TypeScript
 * Express.js
+* MySQL
 
 Se implementan los siguientes **patrones de diseño**:
 
