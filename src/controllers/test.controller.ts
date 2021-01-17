@@ -1,22 +1,10 @@
 import { Request, Response } from 'express';
 import { GET, route } from 'awilix-express';
-import { TestService } from '../services/test.service';
 
 @route('/')
 export class TestController {
-  constructor(private readonly testService: TestService) {}
-
   @GET()
   public index(req: Request, res: Response): void {
-    res.send({
-      APP_ENV: process.env.APP_ENV,
-      NODE_ENV: process.env.NODE_ENV,
-    });
-  }
-
-  @route('test')
-  @GET()
-  public test(req: Request, res: Response): void {
-    res.send(this.testService.get());
+    res.send('running...');
   }
 }

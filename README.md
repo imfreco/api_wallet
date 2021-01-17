@@ -2,17 +2,17 @@
 
 > by Fredy Cortés :metal:
 
-Se abarcan las siguientes tecnologías:
+Se abarcan las siguientes **tecnologías**:
 
 * Node.js
 * TypeScript
 * Express.js
 
-Se implementan los siguientes patrones de diseño:
+Se implementan los siguientes **patrones de diseño**:
 
 * Inyección de dependencias
 * Repositorios
 
-Se implementa el patrón arquitectónico:
+Se implementa el **patrón arquitectónico**:
 
 * N Capas
