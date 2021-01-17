@@ -1,4 +1,8 @@
 import { ApplicationException } from '../common/exceptions/application.exception';
+import {
+  ISubscriptionCreateDto,
+  ISubscriptionUpdateDto,
+} from '../dtos/subscription.dto';
 import { ISubscription } from './repositories/domain/subscription';
 import { ISubscriptionRepository } from './repositories/subscription.repository';
 

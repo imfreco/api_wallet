@@ -31,3 +31,24 @@ Se trabajaron las siguientes tablas en la base de datos:
 |cron|varchar(50)|NO||NULL||
 |created_at|datetime|YES||NULL||
 |updated_at|datetime|YES||NULL||
+
+### wallet_balance
+
+|Field|Type|Null|Key|Default|Extra|
+|-|-|-|-|-|-|
+|id|int|NO|PRIMARY|NULL|auto_increment|
+|user_id|int|NO||NULL||
+|amount|decimal(10,2)|NO||NULL||
+|created_at|datetime|YES||NULL||
+|updated_at|datetime|YES||NULL||
+
+### wallet_movement
+
+|Field|Type|Null|Key|Default|Extra|
+|-|-|-|-|-|-|
+|id|int|NO|PRIMARY|NULL|auto_increment|
+|user_id|int|NO||NULL||
+|type|tinyint|NO||NULL||
+|amount|decimal(10,2)|NO||NULL||
+|created_at|datetime|YES||NULL||
+|updated_at|datetime|YES||NULL||

@@ -10,3 +10,5 @@ interface ISubscriptionUpdateDto {
   amount: number;
   cron: string;
 }
+
+export { ISubscriptionCreateDto, ISubscriptionUpdateDto };
