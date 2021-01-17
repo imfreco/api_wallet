@@ -1,7 +1,8 @@
 import mysqlConn from '../../../../common/persistence/mysql.persistence';
 import { ISubscription } from '../../domain/subscription';
+import { SubscriptionRepository } from '../../subscription.repository';
 
-export class SubscriptionRepository {
+export class SubscriptionRepositoryMySQL implements SubscriptionRepository {
   public async findAll(): Promise<ISubscription[]> {
     const [rows] = await mysqlConn.execute(
       'SELECT * FROM wallet_subscription ORDER BY id DESC'
