@@ -9,6 +9,7 @@ import { MovementService } from './services/movement.service';
 import { SubscriptionRepositoryPostgreSQL } from './services/repositories/impl/postgresql/subscription.repository';
 import { MovementRepositoryPostgreSQL } from './services/repositories/impl/postgresql/movement.repository';
 import { BalanceRepositoryPostgreSQL } from './services/repositories/impl/postgresql/balance.repository';
+import { BalanceService } from './services/balance.service';
 
 export default (app: express.Application) => {
   const container = createContainer({ injectionMode: 'CLASSIC' });
@@ -23,6 +24,7 @@ export default (app: express.Application) => {
 
     subscriptionService: asClass(SubscriptionService).scoped(),
     movementService: asClass(MovementService).scoped(),
+    balanceService: asClass(BalanceService).scoped(),
   });
 
   app.use(scopePerRequest(container));
