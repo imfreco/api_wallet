@@ -8,6 +8,7 @@ Se abarcan las siguientes **tecnologías**:
 * TypeScript
 * Express.js
 * MySQL
+* PostgreSQL
 
 Se implementan los siguientes **patrones de diseño**:
 
