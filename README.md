@@ -52,3 +52,17 @@ Se trabajaron las siguientes tablas en la base de datos:
 |amount|decimal(10,2)|NO||NULL||
 |created_at|datetime|YES||NULL||
 |updated_at|datetime|YES||NULL||
+
+### auth_user
+
+|Field|Type|Null|Key|Default|Extra|
+|-|-|-|-|-|-|
+|id|int|NO|PRIMARY|NULL|auto_increment|
+|email|varchar(100)|NO||NULL||
+|password|varchar(100)|NO||NULL||
+|created_at|datetime|YES||NULL||
+|updated_at|datetime|YES||NULL||
+
+A continuación se muestra el modelo relacional hecho en ***pgmodeler***:
+
+![Modelo Relacional API_WALLET](./public/imgs/mr.png)
